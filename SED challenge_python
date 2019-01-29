@@ -1,0 +1,19 @@
+import re
+for_in range(int(input())): cc_inp=input()
+reg=re.findall(r'(^[456]{1}\d{3})(?! _)(-?)(\d{4})(?! _)(-?)(\d{4})(?! _)(-?)(\d{4})$',cc_inp)
+if reg:
+    reg1=re.sub(r'\D', "",cc_inp)
+
+    for i in range(13):
+        if(reg1[i]==reg1[i+1]):
+            if(reg1[i+1]==reg1[i+2]):
+                if(reg1[i+2]==reg1[i+3]):
+                    print("Invalid")
+                    exit()                   
+        else:
+            res=True
+    if(res==True):
+        print("Valid")
+
+else:
+    print("Invalid")
