@@ -59,5 +59,4 @@
       template:
         src: index.html
         dest: /Desktop/GIT/Vinod-Reddy_challenge/config.yml/index.html
-
-
+...
